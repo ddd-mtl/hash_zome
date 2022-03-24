@@ -2,10 +2,10 @@
 
 Small command-line utility for hashing a zome wasm
 
-## Installation
-
-FIXME
-
+## Usage
+```
+./hash_zome.exe ..\snapmail-rsm\target\wasm32-unknown-unknown\release\snapmail.wasm 1>zome_hash.txt
+```
 ## License
 [![License: CAL 1.0](https://img.shields.io/badge/License-CAL%201.0-blue.svg)](https://github.com/holochain/cryptographic-autonomy-license)
 

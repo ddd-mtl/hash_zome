@@ -1,5 +1,5 @@
 [package]
-name = "hash_Zome"
+name = "hash_zome"
 version = "0.0.1"
 keywords = [ "holochain" ]
 categories = [ "command-line-utilities"]

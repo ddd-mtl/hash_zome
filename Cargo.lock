@@ -209,7 +209,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "hash_Zome"
+name = "hash_zome"
 version = "0.0.1"
 dependencies = [
  "anyhow",

@@ -9,13 +9,21 @@ edition = "2021"
 name = "hash_zome"
 path = "src/main.rs"
 
+[[bin]]
+name = "unpack_webhapp"
+path = "src/unpack_webhapp.rs"
+
 
 [dependencies]
 anyhow = "1.0"
-base64 = "0.13"
+sha2 = "0.10.9"
+hex = "0.4.3"
 tokio = { version = "1.8.1", features = [ "full" ] }
 serde = { version = "1.0", features = [ "derive", "rc" ] }
 
-holochain_serialized_bytes = "=0.0.51"
-holo_hash = { version = "0.0.19", features =["encoding", "hashing"]}
+holochain_serialized_bytes = "=0.0.56"
+holo_hash = { version = "0.5.6", features =["encoding", "hashing"]}
+holochain_types = "0.5.2"
+
+
 

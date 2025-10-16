@@ -23,11 +23,19 @@ jobs:
           - windows-latest
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
-      - name: Build and upload Rust binary to GitHub Releases
+      - uses: actions/checkout@v3
+      - name: Build and upload hash_zome binary to GitHub Releases
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: hash_zome
+          tar: all
+          zip: none
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and upload unpack_webhapp binary to GitHub Releases
+        uses: taiki-e/upload-rust-binary-action@v1
+        with:
+          bin: unpack_webhapp
           tar: all
           zip: none
         env:
